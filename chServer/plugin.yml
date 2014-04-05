@@ -1,0 +1,15 @@
+name: Charity Plugin
+main: louis.server.dewardt.CharityServer
+version: 0.1
+commands:
+   join:
+      description: Use this to join games in a mini game!
+      usage: /join
+      permission: <plugin name>.basic
+      permission-message: You don't have <permission>
+   leave:
+      description: Use this to leave games!
+      usage: /leave
+      permission: <plugin name>.basic
+      permission-message: You don't have <permission>
+   
