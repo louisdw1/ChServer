@@ -140,10 +140,10 @@ public class LayerSpleef implements MiniGameListener{
 			}
 
 		
-	//if(Bukkit.getWorld("world_"+PlayerWorld.LAYERSPLEEF+"_game_"+gameID) == null)
-	//{
-		//Bukkit.getServer().createWorld(new WorldCreator("world_"+PlayerWorld.LAYERSPLEEF+"_game_"+gameID));	
-	//
+	if(Bukkit.getWorld("world_"+PlayerWorld.LAYERSPLEEF+"_game_"+gameID) == null)
+	{
+	Bukkit.getServer().createWorld(new WorldCreator("world_"+PlayerWorld.LAYERSPLEEF+"_game_"+gameID));	
+	}
 		 ArrayList<Player> playerTemp = players.get(gameID);
 		 playerTemp.add(player);
 		players.put(gameID, playerTemp);
